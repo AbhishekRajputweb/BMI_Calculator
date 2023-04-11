@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* BMI calculator box */
+
+ .bmi-box{
+    background-color: rgba(128, 128, 128,);
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 20px;
+    flex: 0 0 20%;
+    width: 20%;
+    padding: 15px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0,0.6);
+ }
+
+ /* BMI title  */
+
+ .bmi-title{
+    display: block;
+    text-align: center;
+    margin: 0 0 30px 0;
+ }
+
+ .bmi-title h1{
+    color: #000000;
+    font-weight: 900;
+ }
+
+ /* bmi input */
+
+ .input-box{
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+ }
+
+ .input-box .input-w,
+ .input-box .input-h{
+    height: 50%;
+    width: 100%;
+    padding:15px 0 15px 0;
+ }
+
+ .input-box .input-w label,
+ .input-box .input-h label{
+     font-size: 20px;
+     font-weight: 500;
+     flex: 0 0 30%;
+     width: 30%;
+ }
+
+ .input-box .input-w input,
+ .input-box .input-h input{
+     height: 30px;
+     flex: 0 0 90%;
+     width: 90%;
+     outline: none;
+     border: 1px solid #000000;
+     font-size: 16px;
+     text-align: center;
+     border-radius: 10px;
+ }
+
+ /* calculation btn  */
+
+ .btn-box{
+    /* background-color: red; */
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .btn-box button{
+    height: 30px;
+    width: 70%;
+    background-color: rgb(168, 154, 149);
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+ }
+
+ .btn-box button:hover{
+    color:  rgb(77, 73, 72);
+    background-color: rgb(190, 182, 182);
+ }
+
+ /* BMI result */
+
+ .bmi-res{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+ }
+
+.bmi-res .cercle{
+    border: 10px solid black;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bmi-res .cercle p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* body Weight type  */
+
+.b-w-type{
+    /* background-color: red; */
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-w-type span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* Responsive */
+
+@media (max-width:744px) {
+    
+    .bmi-box{
+        flex: 0 0 40%;
+        width: 40%;
+        padding: 10px;
+     }
+    
+}
+
+@media (max-width:444px) {
+    
+    .bmi-box{
+        flex: 0 0 80%;
+        width: 80%;
+        padding: 10px;
+     }
+    
+}
